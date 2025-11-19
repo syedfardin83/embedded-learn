@@ -69,7 +69,6 @@ int _write(int file,char *ptr,int len){
 	hstatus = HAL_UART_Transmit(&huart2,(uint8_t *)ptr,HAL_MAX_DELAY);
 	if(hstatus==HAL_OK) return len;
 	else return -1;
-
 }
 
 /* USER CODE END 0 */
